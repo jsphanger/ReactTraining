@@ -14,15 +14,15 @@ class Button extends React.Component {
     
   render(){
     return(
-    // ** Need babel.js for this to work
-    //   <button onClick={this.handleClick}>
-    //     {this.state.counter}
-    //   </button>
-        React.createElement("button", { onClick: this.handleClick }, this.state.counter  )
+        // ** Need babel.js for this JSX to work.  It looks like it's already apart of the node modules?
+        <button id="btnSubmit" onClick={this.handleClick}>
+          {this.state.counter}
+        </button>
+
+        //React.createElement("button", { id: "btnSubmit", onClick: this.handleClick }, this.state.counter  )
       );
     }
   }
   
-ReactDOM.render(<Button />, document.getElementById('root'));
-//ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Button />, document.getElementById('buttonWidget'));
 registerServiceWorker();
