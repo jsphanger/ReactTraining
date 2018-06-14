@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+/* Styles for main react project */
+.card{
+	padding: 1em;
+  display: block;
+  border:none;
+}
+.card img{
+	width:75px;
+}
+.cardTextBlock{
+	display: inline-block;
+  margin-left: 10px;
+}
+.cardTextHeader{
+	font-size: 1.25em;
+  font-weight:bold;
+}
